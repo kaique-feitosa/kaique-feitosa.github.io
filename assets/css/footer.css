@@ -1,0 +1,33 @@
+@import url("./global.css");
+
+footer {
+  margin-top: auto;
+  margin-bottom: 3.5rem;
+}
+
+footer p {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 19.36px;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p a {
+  color: var(--text-color);
+}
+
+footer p a:hover {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    margin-bottom: 0;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}

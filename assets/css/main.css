@@ -1,0 +1,191 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem 1rem;
+}
+
+.main__content1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 36.8px;
+}
+
+h1 span {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-family: "League Spartan", sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.main__content1 p {
+  font-size: 1.25rem;
+  line-height: 24.2px;
+}
+
+.menu--social {
+  gap: 1rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+
+  background-color: transparent;
+  border-radius: 3.125rem;
+  cursor: pointer;
+  padding: 0.875rem 1.5rem;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn--primary {
+  border: 1px solid var(--primary-color);
+}
+
+.btn--primary span {
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.btn span,
+.btn i {
+  font-size: 1.25rem;
+}
+
+.main__content2 iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  background-color: var(--secondary-bg-color);
+  padding: 6.25rem 1rem 2rem 1rem;
+  margin-top: -5.5rem;
+}
+
+.skills h2 {
+  text-transform: none;
+  font-size: 2rem;
+  line-height: 29.44px;
+}
+
+.skills__list {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+}
+
+.skills__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--secondary-border-color);
+  border-radius: 50%;
+  height: 4.8rem;
+  width: 4.8rem;
+  aspect-ratio: 1/1;
+}
+
+.skills__logo {
+  height: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 8rem 6rem 4rem;
+  }
+
+  .main__content1 {
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 58px;
+  }
+
+  .skills {
+    padding: 6.25rem 6rem 2rem 6rem;
+    margin-top: -6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    padding: 12rem 6rem 2rem;
+  }
+
+  .main__content1 .btn {
+    width: auto;
+  }
+
+  .skills {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10rem 6rem 4rem;
+  }
+
+  .skills h2 {
+    font-size: 3rem;
+    line-height: 58.88px;
+    width: 60%;
+  }
+
+  .skills__list {
+    gap: 1rem;
+  }
+
+  .skills__item {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .skills__logo {
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  main {
+    padding: 12rem 15rem 2rem;
+  }
+
+  .main__content1 p {
+    font-size: 1.5rem;
+  }
+
+  .main__content1 h1 {
+    font-size: 6.25rem;
+    line-height: 98px;
+  }
+
+  .skills {
+    padding: 10rem 15rem 4rem;
+  }
+}

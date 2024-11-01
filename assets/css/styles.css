@@ -1,11 +1,16 @@
 @import url("./reset.css");
 @import url("./global.css");
 @import url("./header.css");
+@import url("./main.css");
+@import url("./footer.css");
 
 body {
   background-color: var(--primary-bg-color);
-  font-family: "League Spartan", sans-serif;
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-  height: 100vh;
+  min-height: 100vh;
+  transition: all 0.5s ease-in-out;
   width: 100vw;
 }
+
