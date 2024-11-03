@@ -30,13 +30,21 @@
   font-size: 1rem;
 }
 
+.header__logo a {
+  position: relative;
+}
+
 .logo__text {
   color: var(--icon-color);
-  /* font-family: "Megrim", system-ui; */
   font-family: "Turret Road", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.3rem;
+}
+
+.bi-code-slash {
+  font-size: 1.25rem;
+  margin: 0 -0.4rem;
 }
 
 #toggleTheme {
