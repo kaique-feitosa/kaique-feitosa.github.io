@@ -1,0 +1,132 @@
+@import url("./global.css");
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--primary-bg-color);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  z-index: 2;
+}
+
+.header__toggle {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* MENU PRINCIPAL */
+.header__nav {
+  display: none;
+}
+
+.menu--principal .menu__icon {
+  display: none;
+  gap: 1rem;
+}
+
+.menu--principal .menu__text {
+  font-size: 1rem;
+}
+
+.logo__text {
+  color: var(--icon-color);
+  /* font-family: "Megrim", system-ui; */
+  font-family: "Turret Road", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+}
+
+#toggleTheme {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+/* MENU MOBILE */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu.menu--mobile {
+  background-color: var(--primary-bg-color);
+  border-top: 1px solid var(--primary-border-color);
+  width: 100vw;
+
+  position: fixed;
+  bottom: 0;
+}
+
+.menu__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0.5rem 1rem;
+}
+
+.menu__icon {
+  font-size: 1.5rem;
+}
+
+.menu__text {
+  color: var(--icon-color);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.menu__link.active .menu__icon,
+.menu__link.active .menu__text,
+.menu__link:hover .menu__icon,
+.menu__link:hover .menu__text {
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 1rem 6rem;
+  }
+
+  .menu.menu--mobile {
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 1.5rem 5rem;
+    position: fixed;
+  }
+
+  .header__nav {
+    display: flex;
+  }
+
+  .header__nav,
+  .header__toggle {
+    min-width: 30%;
+  }
+
+  .nav--mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 1.5rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header {
+    padding: 2rem 14rem;
+  }
+}

@@ -1,0 +1,11 @@
+footer p {
+  color: var(--text-color);
+  font-size: 0.875rem;
+  line-height: 16.94px;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p a {
+  font-weight: 700;
+}

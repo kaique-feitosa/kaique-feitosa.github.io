@@ -1,0 +1,132 @@
+@import url("./reset.css");
+@import url("./global.css");
+@import url("./header.css");
+@import url("./main.css");
+@import url("./technologies.css");
+@import url("./projects.css");
+@import url("./about.css");
+@import url("./contact.css");
+@import url("./footer.css");
+
+* {
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  transition: all 0.4s ease-in-out;
+}
+
+html[data-theme="light"] .technologies__logo {
+  filter: invert(80%);
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  padding: 2.5rem 1rem;
+}
+
+a {
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  line-height: 36.8px;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
+
+h3 {
+  font-size: 1.55rem;
+  text-align: left;
+}
+
+h4 {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 1.15rem;
+  text-align: left;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "League Spartan", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: var(--title-color);
+  font-weight: 200;
+}
+
+i {
+  color: var(--icon-color);
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 4rem 6rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    padding: 10rem 6rem 2rem;
+  }
+
+  h1 {
+    font-size: 6.25rem;
+    line-height: 95px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    padding: 12rem 8rem 4rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  main {
+    padding: 12rem 15rem 2rem;
+  }
+
+  h1 {
+    font-size: 6.25rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+  
+  h3 {
+    font-size: 3.25rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}

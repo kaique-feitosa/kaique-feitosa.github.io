@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio do desenvolvedor front-end Kaique Feitosa para compartilhar projetos e habilidades desenvolvidas."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=League+Spartan:wght@100..900&family=Megrim&family=Turret+Road:wght@200;300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <title>Kaique Feitosa | Portfólio</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="menu menu--principal">
+          <li class="menu__item">
+            <a href="#home" class="menu__link active">
+              <i class="menu__icon bi bi-house-door"></i>
+              <span class="menu__text">Home</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#projetos" class="menu__link">
+              <i class="menu__icon bi bi-window-stack"></i>
+              <span class="menu__text">Projetos</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#about" class="menu__link">
+              <i class="menu__icon bi bi-person"></i>
+              <span class="menu__text">Sobre</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#contact" class="menu__link">
+              <i class="menu__icon bi bi-envelope"></i>
+              <span class="menu__text">Contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__logo">
+        <a href="#home">
+          <span class="logo__text">Kaique Feitosa</span>
+        </a>
+      </div>
+
+      <div class="header__toggle">
+        <i id="toggleTheme" class="bi bi-sun"></i>
+      </div>
+    </header>
+
+    <nav class="nav--mobile">
+      <ul class="menu menu--mobile">
+        <li class="menu__item">
+          <a href="#home" class="menu__link active">
+            <i class="menu__icon bi bi-house-door"></i>
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#projetos" class="menu__link">
+            <i class="menu__icon bi bi-window-stack"></i>
+            <span class="menu__text">Projetos</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#about" class="menu__link">
+            <i class="menu__icon bi bi-person"></i>
+            <span class="menu__text">Sobre</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#contact" class="menu__link">
+            <i class="menu__icon bi bi-envelope"></i>
+            <span class="menu__text">Contato</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="home">
+      <div class="main__content1">
+        <h1><span>Soluções Criativas &</span> Desenvolvimento Front-end</h1>
+        <p>Kaique Feitosa, Araripina-PE, Desenvolvedor Front-end.</p>
+
+        <ul class="menu menu--social">
+          <li>
+            <a
+              href="https://github.com/kaique-feitosa"
+              class="menu__link"
+              target="_blank"
+            >
+              <i class="menu__icon bi bi-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu__link" target="_blank">
+              <i class="menu__icon bi bi-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu__link" target="_blank">
+              <i class="menu__icon bi bi-instagram"></i>
+            </a>
+          </li>
+        </ul>
+
+        <a href="https://github.com/kaique-feitosa" target="_blank">
+          <button class="btn btn--primary">
+            <span>Ver Projetos</span>
+            <i class="bi bi-arrow-down-right"></i>
+          </button>
+        </a>
+      </div>
+    </main>
+
+    <section class="technologies">
+      <h2>Conhecimento nas principais tecnologias do mercado</h2>
+
+      <ul class="technologies__list">
+        <li class="technologies__item">
+          <img
+            src="./assets/images/technologies/js.svg"
+            alt="Logo JavaScript"
+            class="technologies__logo"
+          />
+        </li>
+        <li class="technologies__item">
+          <img
+            src="./assets/images/technologies/bootstrap.svg"
+            alt="Logo Bootstrap"
+            class="technologies__logo"
+          />
+        </li>
+        <li class="technologies__item">
+          <img
+            src="./assets/images/technologies/sass.svg"
+            alt="Logo SASS"
+            class="technologies__logo"
+          />
+        </li>
+      </ul>
+    </section>
+
+    <section id="projetos" class="projects">
+      <h2>Projetos</h2>
+
+      <div class="projects__container">
+        <div class="projects__card">
+          <img
+            src="./assets/images/projects/imagem-1.png"
+            alt="Capa Josi's Box"
+            class="card__cover"
+          />
+          <div class="card__body">
+            <h3 class="card__title">Josi's Box Ecommerce</h3>
+            <p class="card__description">Ecommerce de livros</p>
+            <ul class="card__list">
+              <li class="card__item">Listagem de favoritos;</li>
+              <li class="card__item">Carrinho de compras;</li>
+              <li class="card__item">Filtragem por preço e categoria.</li>
+            </ul>
+
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Bootstrap.svg"
+                  alt="Logo Bootstrap"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/SASS.svg"
+                  alt="Logo SASS"
+                />
+              </li>
+            </ul>
+
+            <div class="card__buttons">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+              <button class="btn">
+                <span>Repositório</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__card card--reverse">
+          <img
+            src="./assets/images/projects/imagem-2.png"
+            alt="Capa Archstil"
+            class="card__cover"
+          />
+          <div class="card__body">
+            <h3 class="card__title">Archstil Blog</h3>
+            <p class="card__description">
+              A história por trás dos Estilos Arquitetônicos.
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Postagens relacionadas e em destaque;</li>
+              <li class="card__item">Filtragem por tags e categorias;</li>
+              <li class="card__item">Biografia do autor.</li>
+            </ul>
+
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Bootstrap.svg"
+                  alt="Logo Bootstrap"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/SASS.svg"
+                  alt="Logo SASS"
+                />
+              </li>
+            </ul>
+
+            <div class="card__buttons">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+              <button class="btn">
+                <span>Repositório</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://www.github.com/kaique-feitosa">
+          <button class="btn btn--primary">
+            <span>Ver todos os projetos</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <div class="about__content1">
+        <img src="" alt="" class="about__photo" />
+        <div class="about__description">
+          <h2>Sobre mim</h2>
+          <p>
+            Elidiana Andrade. Apaixonada por artes e tecnologia, meu primeiro
+            "Hello World" foi na pré-adolescência quando tive contato com HTML,
+            CSS e um pouco de JavaScript e Notepad++. Atualmente curso
+            especialização em Desenvolvimento de Software com Metodologias Ágeis
+            e atuo como instrutora e desenvolvedora freelance
+          </p>
+          <div class="about__icons">
+            <i class="bi bi-translate"></i>
+            <span>Inglês: Intermediário | Espanhol: Básico</span>
+          </div>
+          <div class="description__buttons">
+            <a href="linkedin">
+              <button class="btn btn--primary">
+                <span>Conecte-se</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__content2">
+        <div class="col2">
+          <h3>Cursos</h3>
+          <div class="accordion">
+            <div class="accordion__item active">
+              <button class="accordion__header start">
+                <span>Versionamento de Código com Git e GitHub</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+
+              <div class="accordion__body">
+                <p>Digital Innovation One. Fev 2023. 2h.</p>
+                <ul>
+                  <li>O que é versionamento de código, Git e GitHub.</li>
+                  <li>
+                    Como instalar e configurar o Git em diferentes sistemas
+                    operacionais e como autenticar via Token e SSH.
+                  </li>
+                  <li>
+                    Como manusear repositórios, indo desde a criação e clonagem
+                    até o gerenciamento de branches, passando por todas as
+                    etapas de salvar, desfazer e sincronizar alterações com o
+                    repositório remoto.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                <span>Contribuindo em um Projeto Open Source no GitHub</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>Digital Innovation One. Fev 2023. 1h.</p>
+                <p>
+                  Lab prático sobre colaboração em projetos de código aberto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <h2>Contate-me</h2>
+      <p>
+        Estou disponível para serviços e novas conexões. Contate-me via e-mail e
+        conecte-se comigo através das minhas redes sociais.
+      </p>
+
+      <ul class="menu menu--social">
+        <li>
+          <a
+            href="https://github.com/kaique-feitosa"
+            class="menu__link"
+            target="_blank"
+          >
+            <i class="menu__icon bi bi-github"></i>
+            <span>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu__link" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu__link" target="_blank">
+            <i class="menu__icon bi bi-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </li>
+      </ul>
+
+      <a href="mailto:kaiquecoelho132@gmail.com">
+        <button class="btn btn--primary">
+          <span class="email">kaiquecoelho132@gmail.com</span>
+        </button>
+      </a>
+    </section>
+
+    <footer>
+      <p>
+        © 2024. Todos os Direitos Reservados. Kaique Feitosa. Desenvolvido por
+        <a href="#">KF</a>.
+      </p>
+    </footer>
+
+    <script src="./assets/js/scripts.js" defer></script>
+  </body>
+</html>

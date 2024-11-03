@@ -1,0 +1,147 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 2.5rem 1rem;
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.projects__container .btn:last-child {
+  gap: 0.5rem;
+}
+
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card__cover {
+  border-radius: 0.5rem;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.card__description {
+  color: var(--title-color);
+}
+
+.card__list {
+  margin-left: 1.25rem;
+}
+
+.card__item {
+  color: var(--text-color);
+  line-height: 19.36px;
+  list-style: disc;
+}
+
+.card__buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.projects .btn {
+  height: auto;
+  width: auto;
+}
+
+.card__buttons .btn:nth-child(2) {
+  border: none;
+  color: var(--primary-color);
+}
+
+.card__buttons .btn span {
+  font-size: 1rem;
+}
+
+.card__body .technologies__list {
+  gap: 0.75rem;
+}
+
+.card__body .technologies__item {
+  height: 4rem;
+  width: 4rem;
+}
+
+.card__body .technologies__logo {
+  height: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    padding: 4rem 6rem;
+  }
+
+  .projects__container .btn:last-child {
+    gap: auto;
+    margin: 0 auto;
+  }
+
+  .projects__container .btn:last-child span {
+    font-size: 1rem;
+  }
+
+  .card__buttons {
+    width: 100%;
+  }
+
+  .card__buttons .btn {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding: 10rem 6rem 2rem;
+  }
+
+  .projects__card {
+    flex-direction: row;
+  }
+
+  .card__cover {
+    width: 55%;
+  }
+
+  .projects__card.card--reverse {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .card__buttons {
+    width: auto;
+  }
+
+  .card__buttons .btn {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .projects {
+    padding: 12rem 8rem 4rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .projects {
+    padding: 12rem 15rem 2rem;
+  }
+}
