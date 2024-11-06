@@ -1,5 +1,34 @@
 :root,
 :root[data-theme="dark"] {
+  --primary-color: #edf2fb;
+
+  --primary-bg-color: #001523;
+  --secondary-bg-color: #00243ead;
+  --primary-border-color: #001a2c;
+  --secondary-border-color: #d7e3fc;
+
+  --title-color: #edf2fb;
+  --text-color: #d7e3fc;
+  --link-color: #d7e3fc;
+  --icon-color: #c1d3fe;
+}
+
+:root[data-theme="light"] {
+  --primary-color: #00111c;
+
+  --primary-bg-color: #e2eafc;
+  --secondary-bg-color: #c1d3fe;
+  --primary-border-color: #c1d3fe;
+  --secondary-border-color: #001a2c;
+
+  --title-color: #00111c;
+  --text-color: #001a2c;
+  --link-color: #001a2c;
+  --icon-color: #002137;
+}
+
+/* :root,
+:root[data-theme="dark"] {
   --primary-color: #f0f0f0;
 
   --primary-bg-color: #111217;
@@ -25,4 +54,4 @@
   --text-color: #28292e;
   --link-color: #28292e;
   --icon-color: #56575a;
-}
+} */

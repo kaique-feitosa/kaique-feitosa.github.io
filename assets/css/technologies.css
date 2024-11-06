@@ -29,10 +29,39 @@
   justify-content: center;
 
   aspect-ratio: 1/1;
-  border: 1px solid var(--secondary-border-color);
+  border: 1px solid var(--icon-color);
   border-radius: 50%;
   width: 4.8rem;
   height: 4.8rem;
+}
+
+.technologies__item svg,
+.technologies__item .bootstrap path,
+.technologies__item #Dribbble-Light-Preview,
+.technologies__item g path #SVGRepo_iconCarrier,
+.technologies__item polygon {
+  fill: var(--secondary-border-color);
+  width: 3.5rem;
+}
+
+.technologies__item svg #SVGRepo_iconCarrier #typescript path {
+  fill: var(--secondary-bg-color);
+}
+
+.technologies__item .typescript-logo {
+  width: 2.8rem;
+}
+
+.technologies__item .typescript-logo #SVGRepo_iconCarrier #typescript path {
+  fill: var(--primary-bg-color);
+}
+
+.technologies__item .typescript-logo.logo--small {
+  width: 2.2rem;
+}
+
+.technologies__item .logo--small {
+  width: 2.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -50,7 +79,6 @@
     flex-direction: row;
     justify-content: space-between;
 
-    margin-top: -8rem;
     padding: 10rem 6rem 2rem;
   }
 

@@ -7,5 +7,9 @@ footer p {
 }
 
 footer p a {
+  transition: 0.3s ease;
+}
+
+footer p a:hover {
   font-weight: 700;
 }

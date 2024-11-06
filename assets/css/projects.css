@@ -62,7 +62,7 @@
   width: auto;
 }
 
-.card__buttons .btn:nth-child(2) {
+.card__buttons a:nth-child(2) .btn {
   border: none;
   color: var(--primary-color);
 }
@@ -117,7 +117,7 @@
   }
 
   .card__cover {
-    width: 55%;
+    width: 50%;
   }
 
   .projects__card.card--reverse {
