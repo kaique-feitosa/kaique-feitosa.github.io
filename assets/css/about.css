@@ -6,13 +6,17 @@
   padding: 2.5rem 1rem;
 }
 
-.about__content1,
-.about__content2 {
+.about__content1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
+}
+
+.about__content2 {
+  display: flex;
+  flex-direction: column;
 }
 
 .about__photo {
@@ -110,8 +114,12 @@
   align-items: flex-start;
   gap: 0.625rem;
 
-  border: 1px solid var(--primary-border-color);
+  border: 1px solid var(--secondary-bg-color);
   padding: 1.25rem;
+}
+
+.accordion__body ul {
+  margin-left: 1.5rem;
 }
 
 .accordion__body p {
@@ -156,13 +164,16 @@
     padding: 10rem 6rem 2rem;
   }
 
-  .about__content1,
-  .about__content2 {
+  .about__content1 {
     display: grid;
     grid-template-columns: 34% 60%;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 4rem;
+  }
+
+  .accordion__body {
+    margin-left: 1.5rem;
   }
 
   .about__description h2 {

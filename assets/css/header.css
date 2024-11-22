@@ -8,7 +8,6 @@
   background-color: var(--primary-bg-color);
   padding: 0.5rem 1rem;
   width: 100%;
-  z-index: 2;
 }
 
 .header__toggle {
@@ -93,7 +92,8 @@
 .menu__link.active .menu__text,
 .menu__link:hover .menu__icon,
 .menu__link:hover .menu__text {
-  color: var(--primary-color);
+  color: var(--social-hover);
+  opacity: var(--social-hover);
 }
 
 @media screen and (min-width: 768px) {
