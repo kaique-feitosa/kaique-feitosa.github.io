@@ -25,7 +25,8 @@
   object-fit: cover;
   object-position: center;
   pointer-events: none;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .about__description {
@@ -150,6 +151,10 @@
     padding: 4rem 6rem;
   }
 
+  .about__photo {
+    width: 90%;
+  }
+
   .description__buttons {
     align-items: center;
   }
@@ -170,6 +175,10 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 4rem;
+  }
+
+  .about__photo {
+    width: 100%;
   }
 
   .accordion__body {
